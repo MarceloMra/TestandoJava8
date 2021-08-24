@@ -14,12 +14,12 @@ public class InfoController {
     @Autowired
     InfoService infoService;
 
-    @PostMapping(value = "/create")
+    @PostMapping()
     public ResponseEntity<?> createInfo(@RequestBody InfoDTO infoDTO){
         return ResponseEntity.status(HttpStatus.OK).body(infoService.createInfo(infoDTO));
     }
 
-    @GetMapping("/findAll")
+    @GetMapping()
     public ResponseEntity<?> findAll(){
         return ResponseEntity.status(HttpStatus.OK).body(infoService.getInfos());
     }
