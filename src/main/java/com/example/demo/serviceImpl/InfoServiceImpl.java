@@ -11,7 +11,7 @@ import org.modelmapper.ModelMapper;
 
 @Service
 public class InfoServiceImpl implements InfoService {
-    ModelMapper modelMapper;
+    private ModelMapper modelMapper;
     @Autowired
     private InfoDAO infoDAO;
 

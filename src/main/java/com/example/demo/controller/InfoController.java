@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class InfoController {
 
     @Autowired
-    InfoService infoService;
+    private InfoService infoService;
 
     @PostMapping()
     public ResponseEntity<?> createInfo(@RequestBody InfoDTO infoDTO){
